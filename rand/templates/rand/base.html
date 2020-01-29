@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'> -->
+  <title>NamePicker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Futura' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <a class="navbar-brand active" href="/" style="font-size:24px;"> NAME PICKER <!--<span class="span-logo"><img id="navb" src="jerry.jpg"></span>--></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarColor01">
+     <ul class="navbar-nav mr-auto">
+      </ul>
+    </div>
+  </nav>
+</head>
+
+  <body>
+    <div class="jumbotron">
+      {% block replace %}
+      {% endblock %}
+    </div>
+ </body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'rand/base.html' %}
+
+{% block replace %}
+<div class=" jumbotron">
+  <center>
+    <h1>ENTER SOME NAMES</h1>
+        <form method="POST" class="post-form form-control-lg">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-primary btn-lg">PICK NOW</button>
+        </form>
+      </center>
+</div>
+{% endblock %}
